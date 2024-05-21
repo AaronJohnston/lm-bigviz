@@ -12,4 +12,4 @@ class Model:
         """Generates attention for a given text."""
         input_tokens = self.tokenizer.encode(text, return_tensors='pt')
         outputs = self.model(input_tokens, output_attentions=True)
-        return input_tokens, outputs.attentions[0]
+        return input_tokens, outputs.attentions
