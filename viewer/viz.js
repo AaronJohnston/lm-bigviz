@@ -1,5 +1,4 @@
 bigvizes = Array.from(document.getElementsByClassName('bigviz'));
-console.log(bigvizes);
 bigvizes.forEach((viz) => {
     data = JSON.parse(viz.dataset.attn);
     tokens = Array.from(viz.getElementsByClassName('token'));
